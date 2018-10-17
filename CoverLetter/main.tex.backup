@@ -1,0 +1,98 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Maarit}{Aalto}
+\title{Contract Manager}                               % optional, remove / comment the line if not wanted
+\address{Ellipsipolku 4a,41}{02210}{Espoo}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+358 50 4914 333 
+}                   % optional, remove / comment the line if not wanted
+\email{maaritaalto5@gmail.com}                               % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Samuli Kajosaari}{Outotec Oyj\\Rauhalanpuisto 9,\\ 02230 Espoo\\ Finland}
+\date{\today}
+\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+It is with great pleasure that I am applying for the open position of a Contract Manager in your Legal and Contract management team.
+I am interested in the open position due to my experience in the metal industry and International
+business contracts. Also, Outotec as a global leader in a mineral and metals processing and developer
+of many breakthrough technologies in metals and mining industry, interests me as potential employer. I
+believe that my good overview of the metal industry together with my experience with contracts and
+educational background provide good prerequisites for succeeding in the position of Contact Manager.
+
+
+I have graduated from Satakunta University of Applied Sciences International Business with focus on
+Cross-Cultural Business Relations. My studies allowed to immediately start working in the international import/export sector
+of commodities. In the following ten years my carreer has consisted of proficuous experiences in different companies, in each of which
+I was able to both improve my skills, professionally and personally, as well as to contribute to the success of the company. Even though
+each step meant to abandon a position I was competent in to start a new experience somwhere else, I found each of such steps to be a fundamental
+one in my professional growth, as it forced me each time to expand my knowledge and to learn new aspects of the business, as well as to
+explore new markets. The last big step was to join NEOT in 2012 where for 4+ years I worked as an Logistics
+and Operations Coordinator, before being promoted to the position of Contract Manager and Demurrage Specialist, where I have been required
+to negotiate on a daily basis contract terms and conditions as well as to take care of the demurrage claims. Even though my time at NEOT has 
+been extremely satisfying, I've realized that the opportunities for learning within the oil trade are now limited for me
+
+
+My degree in International business provides me with expertise in
+International trades in the whole supply chain and foreign trade documentation. In my specialized
+professional studies I concentrated on movement of goods, international marketing, cultural studies and
+global project management.
+
+In November 2016, I moved to my previous position as a Contract
+Manager and demurrage specialist. My current task on contract side include issuing spot and term
+contracts, checking the purchase contracts, negotiating contract terms and conditions, and of course
+making sure that we are minimizing risks and maximizing operational performance. My task on
+demurrage side is to negotiate demurrage claims daily. I work in close collaboration with the trading
+desk, operations, risk management, sustainability, finance and shipping department.
+
+I received good feedback for my precise way of working, from my supervisor and from my other
+colleagues.
+
+I would be pleased to discuss my job application further in a personal interview.
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.

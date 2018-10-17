@@ -1,0 +1,199 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\renewenvironment{aside}{%
+  \let\oldsection\section
+  \renewcommand{\section}[1]{
+    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+  }
+  \begin{textblock}{4.6}(0.2,0.2)
+  \begin{flushright}
+  \obeycr
+}{%
+  \restorecr
+  \end{flushright}
+  \end{textblock}
+  \let\section\oldsection
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.4cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.4cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Maarit}{Aalto}
+      {Contract Manager and Demurrage Specialist}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+\includegraphics[scale=0.15]{img/profile.png}
+  \section{Address}
+    Ellipsipolku 4a,41
+     02210 Espoo
+    ~
+  \section{Contacs}
+\includegraphics[scale=0.03]{img/phone.png} +358 50 4914 333 
+\includegraphics[scale=0.03]{img/mail.png}   maaritaalto5@gmail.com
+\includegraphics[scale=0.03]{img/skype.png} maarit024 
+~ 
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Skills}
+    \smartdiagram[bubble diagram]{
+    \textbf{stakeholder\&supplier}\\\textbf{ relationships},
+        \textbf{Intl. contracts},
+        \textbf{Intl. business},
+        \textbf{Negotiations},
+        \textbf{Claims}\\\textbf{Expert},
+         \textbf{Import}\\\textbf{Export}}
+    ~
+  \section{Personal Skills}
+  \smartdiagram[bubble diagram]{
+    \textbf{Communication},
+    \textbf{Independent}\\\textbf{worker},
+    \textbf{Prioritization},
+    \textbf{Organization},
+    \textbf{Working}\\\textbf{under pressure},
+    \textbf{Persistence}  }
+       ~
+       \section{Languages}
+    \textbf{Finnish}\includegraphics[scale=0.40]{img/5stars.png} 
+    \textbf{English}\includegraphics[scale=0.40]{img/5stars.png} 
+    \textbf{Swedish}\includegraphics[scale=0.40]{img/2stars.png} 
+    \textbf{Spanish}\includegraphics[scale=0.40]{img/2stars.png}
+    ~
+   \section{Personal Interests}
+   Running,Swimming,Kayak
+    %  \includegraphics[scale=0.01]{img/swimming.png}\includegraphics[scale=0.03]{img/kayak.png}
+    %  \includegraphics[scale=0.1]{img/tennis.png}
+\end{aside}
+
+\section{Experience}
+
+\begin{entrylist}
+ 
+\entry
+{11/2016 - }
+{Contract Manager and Demurrage Specialist}
+{North European Oil Trade Oy}
+{Issuing sales contracts and checking purchase contracts, negotiating terms
+and conditions with counterparties. Minimizing risks and maximizing financial and operational
+performance by supporting and advising traders and collaborating with risk management, finance and
+shipping team. Negotiating Demurrage claims and increasing efficiency for demurrages.
+}
+\entry
+{12/2012-11/2016}
+{Operations and Logistics Coordinator}
+{North European Oil Trade Oy}
+{Oil product supply chain operations from the refinery to the distribution terminal. Issuing and checking
+spot purchase and sales contracts and negotiating contract clauses with counterparties. Full tanker
+operations for own time-chartered vessels and spot vessels, including performance follow up.
+}
+\entry
+{10/2010-12/2012}
+{Freight Forwarder (sea export)} 
+{Kuehne + Nagel Oy}
+{Organizing shipments for corporations from different fields to get goods from the manufacturer to the final
+point of distribution. Daily contact with shipowners, customers, transport companies, port operators and
+other stakeholders. Responsibility of interaction with major customer.
+
+}
+\entry
+{5/2007-9/2010}
+{Export Assistant}
+{Norilsk Nickel Harjavalta Oy}
+{Coordinating the process from order to delivery and preparing and issuing export documentation. The daily tasks
+included continuous collaboration with stakeholders, production, marketing and finance department.}
+\entry
+{5/2006-8/2006}
+{Export Assistant}
+{OMG Harjavalta Nickel Oy}
+{Coordinating the process from order to delivery and preparing and issuing export documentation. The daily tasks
+included continuous collaboration with stakeholders, production, marketing and finance department.}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+\unientry
+{2004 - 2009}
+{Bachelor's in Intl. Business}
+{0.05}
+{img/samk.jpg}
+{University of Applied Sciences, Rauma}
+{International Business:\\
+Cross-Cultural Business Relations.
+}
+\\
+\entry
+    {8/2006- 12/2006}
+    {International Student Exchange}
+    {Universidad de Monterrey, Mexico}
+    {}
+\\
+\end{entrylist}
+\section{Professional Training \& Courses}
+\begin{entrylist}
+\entry
+{2017}
+{International Business Contracts}
+{Ratekoulutus}
+{Course in Helsinki}
+\\
+\entry
+{2016}
+{Oil Industry Laytime and Demurrage Training}
+{Asdem}
+{Workshop in London }
+\\
+\end{entrylist}
+ 
+
+\end{document}
